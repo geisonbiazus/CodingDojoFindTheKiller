@@ -4,7 +4,7 @@ class Witness
 		@case = the_case
 	end
 
-	def ask(person, weapon, place)
+	def answer(person, weapon, place)
 
 		result = []
 

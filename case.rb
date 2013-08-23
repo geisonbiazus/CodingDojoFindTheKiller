@@ -30,11 +30,13 @@ class Case
 		"Toronto"
 	]
 
-	attr_reader :guilty, :used_weapon, :place
+	attr_accessor :guilty, :used_weapon, :place
 
 	def initialize(guilty=nil, used_weapon=nil, place=nil)
 		@guilty = guilty || Random.rand(1..SUSPECTS.length)
 		@used_weapon = used_weapon || Random.rand(1..WEAPONS.length)
 		@place = place || Random.rand(1..PLACES.length)
 	end
+
+	
 end
