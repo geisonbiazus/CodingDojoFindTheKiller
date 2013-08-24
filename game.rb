@@ -25,7 +25,7 @@ class Game
 			message << "The detective asks witness if the victim was murdered by #{suspect} with #{weapon} in #{place}\n"
 			if hist[:answer] != 0 
 				message << "The witness answered that the murderer was not in #{place}\n" if hist[:answer] == 3
-				message << "The witness answered that the murderer was not with #{weapon}\n" if hist[:answer] == 2
+				message << "The witness answered that the murderer was not with a #{weapon}\n" if hist[:answer] == 2
 				message << "The witness answered that the victim wasn't murdered by #{suspect}\n" if hist[:answer] == 1
 			else
 				message << "The witness answered that it was right\n" 

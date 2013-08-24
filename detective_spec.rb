@@ -27,7 +27,7 @@ describe Detective do
 		@detective.investigate.last.should == 4
 	end
 
-	it "should contains one history, after call investigate" do
+	it "should contain one history, after call investigate" do
 		@detective.investigate
 		@detective.history.count.should >= 1
 	end

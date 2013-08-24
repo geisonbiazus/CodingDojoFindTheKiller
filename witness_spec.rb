@@ -26,7 +26,8 @@ describe Witness do
 			@witness.answer(1, 1, 2).should == 3
 		end
 
-		it "should return 1 or 2 when the guilty or the weapon are wrong" do
+		it "should return 1 or 2 when the guilty or the weapon is wrong" do
+		# it "should return 1 or 2 when the guilty or the weapon are wrong" do -- is por causa do or
 			guilty = false
 			weapon = false
 
@@ -40,7 +41,8 @@ describe Witness do
 			(guilty && weapon).should == true
 		end
 
-		it "should return 2 or 3 when the weapon or the place are wrong" do
+		it "should return 2 or 3 when the weapon or the place is wrong" do
+		# it "should return 2 or 3 when the weapon or the place are wrong" do
 			weapon = false
 			place = false
 
@@ -54,7 +56,8 @@ describe Witness do
 			(weapon && place).should == true
 		end
 
-		it "should return 1 or 3 when the person or the place are wrong" do
+		it "should return 1 or 3 when the person or the place is wrong" do
+		# it "should return 1 or 3 when the person or the place are wrong" do
 			person = false
 			place = false
 
@@ -68,7 +71,8 @@ describe Witness do
 			(person && place).should == true
 		end
 
-		it "should return 1, 2 or 3 when the person, weapon or the place are wrong" do
+		it "should return 1, 2 or 3 when the person, weapon or the place is wrong" do
+		# it "should return 1, 2 or 3 when the person, weapon or the place are wrong" do
 			person = false
 			place = false
 			weapon = false
