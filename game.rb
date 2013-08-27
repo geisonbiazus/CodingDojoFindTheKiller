@@ -24,13 +24,15 @@ class Game
 			place = Case::PLACES[hist[:question][2] - 1]
 			message << "The detective asks witness if the victim was murdered by #{suspect} with #{weapon} in #{place}\n"
 			if hist[:answer] != 0 
-				message << "The witness answered that the murderer was not in #{place}\n" if hist[:answer] == 3
-				message << "The witness answered that the murderer was not with #{weapon}\n" if hist[:answer] == 2
+				message << "The witness answered that the murder was not in #{place}\n" if hist[:answer] == 3
+				message << "The witness answered that the murder was not with #{weapon}\n" if hist[:answer] == 2
 				message << "The witness answered that the victim wasn't murdered by #{suspect}\n" if hist[:answer] == 1
 			else
 				message << "The witness answered that it was right\n" 
-				message << "#{suspect} killed the victim with #{weapon} in #{place}" 
+				message << "#{suspect} killed the victim with #{weapon} in #{place}\n" 
+				message << "The detective resolved the case in #{@detective.history.length} tries"
 			end
+
 			
 		end
 			puts message
