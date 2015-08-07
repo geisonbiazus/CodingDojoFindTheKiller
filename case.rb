@@ -38,5 +38,5 @@ class Case
 		@place = place || Random.rand(1..PLACES.length)
 	end
 
-	
+
 end
